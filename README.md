@@ -3,5 +3,6 @@
 # Install
 ```sh
 git clone https://github.com/FoowsIsBack/Scientific_Calculator.git
-cd Calculator
+cd Scientific_Calculator
+python3 Calculator.py
 ```
