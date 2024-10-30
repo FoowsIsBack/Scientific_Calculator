@@ -174,6 +174,9 @@ def asmd_result():
     time.sleep(1)
     main()
 
+def power():
+    pass
+
 def shift_mode():
     print(f""" 
     ╔═════════════════════════╗
@@ -191,6 +194,8 @@ def shift_mode():
     if choice == 1:
         qroot()
     elif choice == 2:
+        power()
+    elif choice == 3:
         pass
     elif choice == 0:
         main()
