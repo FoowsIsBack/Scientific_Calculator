@@ -10,7 +10,13 @@ def clear():
         os.system('clear')
 
 def add():
-    pass
+
+    print(f""" 
+    ╔═════════════════════════╗
+    ║        ADDITION         ║
+    ╚═════════════════════════╝""")
+    num1 = int(input("     Num1: "))
+    num2 = int(input("     Num2: "))
 
 def sub():
     pass
