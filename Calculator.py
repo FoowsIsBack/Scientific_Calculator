@@ -7,7 +7,7 @@ def main():
     ║  2.   Subtraction       ║
     ║  3.   Multiplication    ║
     ║  4.   Division          ║
-    ║  5.                     ║
+    ║  5.   All in One        ║
     ║  0.   Exit              ║
     ╚═════════════════════════╝""")
 
