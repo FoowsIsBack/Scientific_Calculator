@@ -10,13 +10,31 @@ def clear():
         os.system('clear')
 
 def add():
-
+    global num1, num2, result
     print(f""" 
     ╔═════════════════════════╗
     ║        ADDITION         ║
     ╚═════════════════════════╝""")
     num1 = int(input("     Num1: "))
     num2 = int(input("     Num2: "))
+    result = num1 + num2
+    time.sleep(1)
+    clear()
+    add_result()
+
+def add_result():
+    print(f""" 
+    ╔═════════════════════════╗
+    ║     ADDITION RESULT     ║
+    ╠═════════════════════════╣
+    ║       Num1 = {num1:<10} ║
+    ║       Num2 = {num2:<10} ║
+    ║       Total = {result:<10}║
+    ╚═════════════════════════╝""")
+    choice = input("     Choice: ")
+    time.sleep(1)
+    main()
+
 
 def sub():
     pass
