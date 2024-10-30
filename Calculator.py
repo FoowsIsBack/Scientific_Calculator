@@ -8,6 +8,20 @@ def clear():
     else:
         os.system('clear')
 
+def add():
+    pass
+
+def sub():
+    pass
+
+def mult():
+    pass
+
+def div():
+    pass
+
+def asmd():
+    pass
 
 def main():
     clear()
