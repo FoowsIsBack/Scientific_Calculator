@@ -39,15 +39,15 @@ def main():
     choice = int(input("     Choice: "))
 
     if choice == 1:
-        pass
+        add()
     elif choice == 2:
-        pass
+        sub()
     elif choice == 3:
-        pass
+        mult()
     elif choice == 4:
-        pass
+        div()
     elif choice == 5:
-        pass
+        asmd()
     elif choice == 0:
         pass
     else:
