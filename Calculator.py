@@ -1,6 +1,7 @@
 #dave.py
 
 import os
+import time
 
 def clear():
     if os.system == 'nt':
@@ -37,6 +38,8 @@ def main():
     ║  0.   Exit              ║
     ╚═════════════════════════╝""")
     choice = int(input("     Choice: "))
+    time.sleep(1)
+    clear()
 
     if choice == 1:
         add()
