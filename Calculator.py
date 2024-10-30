@@ -180,7 +180,8 @@ def shift_mode():
     ║       SHIFT MODE        ║
     ╠═════════════════════════╣
     ║  1.   Square root       ║
-    ║  2.     
+    ║  2.   Base / Exponent   ║  
+    ║  3.     
     ║  0.   Back              ║
     ╚═════════════════════════╝""")
     choice = int(input("     Choice: "))
