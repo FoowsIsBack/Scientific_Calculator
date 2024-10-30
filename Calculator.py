@@ -32,7 +32,7 @@ def add_result():
     ║       Num2 = {num2:<10} ║
     ║       Total = {result:<10}║
     ╚═════════════════════════╝""")
-    choice = input("     Choice: ")
+    choice = input("     Press Enter to Go Back: ")
     time.sleep(1)
     main()
 
@@ -60,7 +60,7 @@ def sub_result():
     ║       Num2 = {num2:<10} ║
     ║       Total = {result:<10}║
     ╚═════════════════════════╝""")
-    choice = input("     Choice: ")
+    choice = input("     Press Enter to Go Back: ")
     time.sleep(1)
     main()
 
@@ -86,7 +86,7 @@ def mult_result():
     ║       Num2 = {num2:<10} ║
     ║       Total = {result:<10}║
     ╚═════════════════════════╝""")
-    choice = input("     Choice: ")
+    choice = input("     Press Enter to Go Back: ")
     time.sleep(1)
     main()       
 
@@ -112,7 +112,7 @@ def div_result():
     ║       Num2 = {num2:<10} ║
     ║       Total = {result:<10.5f}║
     ╚═════════════════════════╝""")
-    choice = input("     Choice: ")
+    choice = input("     Press Enter to Go Back: ")
     time.sleep(1)
     main()  
 
@@ -136,13 +136,43 @@ def qroot_result():
     ║       Num1 = {num1:<10} ║
     ║       Qroot = {result:<10.4f}║
     ╚═════════════════════════╝""")
-    choice = input("     Choice: ")
+    choice = input("     Press Enter to Go Back: ")
     time.sleep(1)
     clear()
     shift_mode()  
 
 def asmd():
-    pass
+    global num1, num2, result, result1, result2, result3
+    print(f""" 
+    ╔═════════════════════════╗
+    ║  ALL IN ONE CALCULATOR  ║
+    ╚═════════════════════════╝""")
+    num1 = int(input("     Num1: "))
+    num2 = int(input("     Num2: "))
+    result = num1 + num2
+    result1 = num1 - num2
+    result2 = num1 * num2
+    result3 = num1 / num2
+    time.sleep(1)
+    clear()
+    asmd_result()
+
+def asmd_result():
+    print(f""" 
+    ╔═════════════════════════╗
+    ║    ALL IN ONE RESULT    ║
+    ╠═════════════════════════╣
+    ║       Num1 = {num1:<10} ║
+    ║       Num2 = {num2:<10} ║
+    ╠═════════════════════════╣
+    ║       Add = {result:<10}  ║
+    ║       Sub = {result1:<10}  ║
+    ║       Mult = {result2:<10} ║
+    ║       Div = {result3:<10}  ║
+    ╚═════════════════════════╝""")
+    choice = input("     Press Enter to Go Back: ")
+    time.sleep(1)
+    main()
 
 def shift_mode():
     print(f""" 
@@ -168,7 +198,7 @@ def main():
     clear()
     print(f""" 
     ╔═════════════════════════╗
-    ║       CALCULATOR        ║
+    ║  SCIENTIFIC CALCULATOR  ║
     ╠═════════════════════════╣
     ║  1.   Addition          ║
     ║  2.   Subtraction       ║
@@ -196,7 +226,7 @@ def main():
         shift_mode()
     elif choice == 0:
         clear()
-        print("Goobye & Thank You!")
+        print("Goodbye & Thank You!")
     else:
         print("       Invalid input!")
         time.sleep(1.5)
