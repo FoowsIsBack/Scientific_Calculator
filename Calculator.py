@@ -52,7 +52,8 @@ def main():
     elif choice == 5:
         asmd()
     elif choice == 0:
-        pass
+        clear()
+        print("Goobye & Thank You!")
     else:
         print("     Invalid input!")
 
