@@ -2,6 +2,7 @@
 
 import os
 import time
+import math
 
 def clear():
     if os.system == 'nt':
@@ -115,9 +116,53 @@ def div_result():
     time.sleep(1)
     main()  
 
+def qroot():
+    global num1, result
+    print(f""" 
+    ╔═════════════════════════╗
+    ║       SQUARE ROOT       ║
+    ╚═════════════════════════╝""")
+    num1 = int(input("     Num1: "))
+    result = math.sqrt(num1)
+    time.sleep(1)
+    clear()
+    qroot_result()
+
+def qroot_result():
+    print(f""" 
+    ╔═════════════════════════╗
+    ║    SQUARE ROOT RESULT   ║
+    ╠═════════════════════════╣
+    ║       Num1 = {num1:<10} ║
+    ║       Qroot = {result:<10.4f}║
+    ╚═════════════════════════╝""")
+    choice = input("     Choice: ")
+    time.sleep(1)
+    clear()
+    shift_mode()  
 
 def asmd():
     pass
+
+def shift_mode():
+    print(f""" 
+    ╔═════════════════════════╗
+    ║       SHIFT MODE        ║
+    ╠═════════════════════════╣
+    ║  1.   Square root       ║
+    ║  2.     
+    ║  0.   Back              ║
+    ╚═════════════════════════╝""")
+    choice = int(input("     Choice: "))
+    time.sleep(1)
+    clear()
+
+    if choice == 1:
+        qroot()
+    elif choice == 2:
+        pass
+    elif choice == 0:
+        main()
 
 def main():
     clear()
@@ -130,6 +175,7 @@ def main():
     ║  3.   Multiplication    ║
     ║  4.   Division          ║
     ║  5.   All in One        ║
+    ║  6.   Shift-Mode        ║    
     ║  0.   Exit              ║
     ╚═════════════════════════╝""")
     choice = int(input("     Choice: "))
@@ -146,6 +192,8 @@ def main():
         div()
     elif choice == 5:
         asmd()
+    elif choice == 6:
+        shift_mode()
     elif choice == 0:
         clear()
         print("Goobye & Thank You!")
