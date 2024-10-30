@@ -90,7 +90,31 @@ def mult_result():
     main()       
 
 def div():
-    pass
+    global num1, num2, result
+    print(f""" 
+    ╔═════════════════════════╗
+    ║        DIVISION         ║
+    ╚═════════════════════════╝""")
+    num1 = int(input("     Num1: "))
+    num2 = int(input("     Num2: "))
+    result = num1 / num2
+    time.sleep(1)
+    clear()
+    div_result()
+
+def div_result():
+    print(f""" 
+    ╔═════════════════════════╗
+    ║     DIVISION RESULT     ║
+    ╠═════════════════════════╣
+    ║       Num1 = {num1:<10} ║
+    ║       Num2 = {num2:<10} ║
+    ║       Total = {result:<10.5f}║
+    ╚═════════════════════════╝""")
+    choice = input("     Choice: ")
+    time.sleep(1)
+    main()  
+
 
 def asmd():
     pass
@@ -126,6 +150,8 @@ def main():
         clear()
         print("Goobye & Thank You!")
     else:
-        print("     Invalid input!")
+        print("       Invalid input!")
+        time.sleep(1.5)
+        main()
 
 main()
