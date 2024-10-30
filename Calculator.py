@@ -37,10 +37,57 @@ def add_result():
 
 
 def sub():
-    pass
+    global num1, num2, result
+    print(f""" 
+    ╔═════════════════════════╗
+    ║        ADDITION         ║
+    ╚═════════════════════════╝""")
+    num1 = int(input("     Num1: "))
+    num2 = int(input("     Num2: "))
+    result = num1 - num2
+    time.sleep(1)
+    clear()
+    sub_result()
+
+
+def sub_result():
+    print(f""" 
+    ╔═════════════════════════╗
+    ║    SUBTRACTION RESULT   ║
+    ╠═════════════════════════╣
+    ║       Num1 = {num1:<10} ║
+    ║       Num2 = {num2:<10} ║
+    ║       Total = {result:<10}║
+    ╚═════════════════════════╝""")
+    choice = input("     Choice: ")
+    time.sleep(1)
+    main()
 
 def mult():
-    pass
+    global num1, num2, result
+    print(f""" 
+    ╔═════════════════════════╗
+    ║      MULTIPLICATION     ║
+    ╚═════════════════════════╝""")
+    num1 = int(input("     Num1: "))
+    num2 = int(input("     Num2: "))
+    result = num1 * num2
+    time.sleep(1)
+    clear()
+    mult_result()
+
+def mult_result():
+    print(f""" 
+    ╔═════════════════════════╗
+    ║  MULTIPLICATION RESULT  ║
+    ╠═════════════════════════╣
+    ║       Num1 = {num1:<10} ║
+    ║       Num2 = {num2:<10} ║
+    ║       Total = {result:<10}║
+    ╚═════════════════════════╝""")
+    choice = input("     Choice: ")
+    time.sleep(1)
+    main()       
 
 def div():
     pass
