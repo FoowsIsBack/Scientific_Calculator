@@ -174,7 +174,7 @@ def asmd_result():
     time.sleep(1)
     main()
 
-def power():
+def exponent():
     global num1, num2, result
     print(f""" 
     ╔═════════════════════════╗
@@ -185,9 +185,9 @@ def power():
     result = math.pow(num1, num2)
     time.sleep(1)
     clear()
-    power_result()
+    exponent_result()
 
-def power_result():
+def exponent_result():
     print(f""" 
     ╔═════════════════════════╗
     ║ {num1} RAISED TO POWER OF {num2} ║
@@ -286,7 +286,7 @@ def shift_mode():
     ║       SHIFT MODE        ║
     ╠═════════════════════════╣
     ║  1.   Square root       ║
-    ║  2.   Base / Exponent   ║  
+    ║  2.   Exponent          ║  
     ║  3.   Factorial         ║   
     ║  4.   nCr               ║
     ║  5.   Modulus           ║
@@ -299,7 +299,7 @@ def shift_mode():
     if choice == 1:
         qroot()
     elif choice == 2:
-        power()
+        exponent()
     elif choice == 3:
         factorial()
     elif choice == 4:
