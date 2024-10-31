@@ -175,16 +175,31 @@ def asmd_result():
     main()
 
 def power():
-    global num1, result
+    global num1, num2, result
     print(f""" 
     ╔═════════════════════════╗
-    ║     RAISED to POWER     ║
+    ║     RAISED TO POWER     ║
     ╚═════════════════════════╝""")
     num1 = int(input("     Base: "))
     num2 = int(input("     Exponent: "))
     result = math.pow(num1, num2)
-    print(result)
     time.sleep(1)
+    clear()
+    power_result()
+
+def power_result():
+    print(f""" 
+    ╔═════════════════════════╗
+    ║ {num1} RAISED TO POWER OF {num2} ║
+    ╠═════════════════════════╣
+    ║      Num1 = {num1:<10}  ║
+    ║      Num2 = {num2:<10}  ║
+    ║      Result = {result:<10.0f}║
+    ╚═════════════════════════╝""")
+    choice = input("     Press Enter to Go Back: ")
+    time.sleep(1)
+    clear()
+    shift_mode()  
 
 def shift_mode():
     print(f""" 
