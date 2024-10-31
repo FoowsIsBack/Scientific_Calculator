@@ -343,7 +343,10 @@ def main():
         clear()
         print("Goodbye & Thank You!")
     else:
-        print("       Invalid input!")
+        print(f""" 
+        ╔═════════════════════════╗
+        ║      Invalid Input!     ║
+        ╚═════════════════════════╝""")
         time.sleep(1.5)
         main()
 
