@@ -201,6 +201,31 @@ def power_result():
     clear()
     shift_mode()  
 
+def factorial():
+    global num1, result
+    print(f""" 
+    ╔═════════════════════════╗
+    ║        FACTORIAL        ║
+    ╚═════════════════════════╝""")
+    num1 = int(input("     Num1: "))
+    result = math.factorial(num1)
+    time.sleep(1)
+    clear()
+    factorial_result()
+
+def factorial_result():
+    print(f""" 
+    ╔═════════════════════════╗
+    ║     FACTORIAL RESULT    ║
+    ╠═════════════════════════╣
+    ║      Num1 = {num1:<10}  ║
+    ║      Result = {result:<10}║    
+    ╚═════════════════════════╝""")
+    choice = input("     Press Enter to Go Back: ")
+    time.sleep(1)
+    clear()
+    shift_mode()
+
 def shift_mode():
     print(f""" 
     ╔═════════════════════════╗
@@ -208,7 +233,7 @@ def shift_mode():
     ╠═════════════════════════╣
     ║  1.   Square root       ║
     ║  2.   Base / Exponent   ║  
-    ║  3.     
+    ║  3.   Factorial         ║    
     ║  0.   Back              ║
     ╚═════════════════════════╝""")
     choice = int(input("     Choice: "))
@@ -220,7 +245,7 @@ def shift_mode():
     elif choice == 2:
         power()
     elif choice == 3:
-        pass
+        factorial()
     elif choice == 0:
         main()
 
