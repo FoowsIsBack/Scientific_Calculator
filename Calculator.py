@@ -308,6 +308,14 @@ def shift_mode():
         modulus()
     elif choice == 0:
         main()
+    else:
+        print(f""" 
+        ╔═════════════════════════╗
+        ║      Invalid Input!     ║
+        ╚═════════════════════════╝""")
+        time.sleep(1.5)
+        clear()
+        shift_mode()
 
 def main():
     clear()
