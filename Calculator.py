@@ -341,7 +341,10 @@ def main():
         shift_mode()
     elif choice == 0:
         clear()
-        print("Goodbye & Thank You!")
+        print(f""" 
+        ╔═════════════════════════╗
+        ║      Bye bye bye...     ║
+        ╚═════════════════════════╝""")
     else:
         print(f""" 
         ╔═════════════════════════╗
