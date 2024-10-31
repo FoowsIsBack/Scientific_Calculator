@@ -253,6 +253,33 @@ def ncr_result():
     clear()
     shift_mode()
 
+def modulus():
+    global num1, num2, result
+    print(f""" 
+    ╔═════════════════════════╗
+    ║         MODULUS         ║
+    ╚═════════════════════════╝""")
+    num1 = int(input("     Num1: "))
+    num2 = int(input("     Num2: "))
+    result = num1 % num2
+    time.sleep(1)
+    clear()
+    modulus_result()
+ 
+def modulus_result():
+    print(f""" 
+    ╔═════════════════════════╗
+    ║      MODULUS RESULT     ║
+    ╠═════════════════════════╣
+    ║      Num1 = {num1:<10}  ║
+    ║      Num2 = {num2:<10}  ║
+    ║      Result = {result:<10}║    
+    ╚═════════════════════════╝""")
+    choice = input("     Press Enter to Go Back: ")
+    time.sleep(1)
+    clear()
+    shift_mode()
+
 def shift_mode():
     print(f""" 
     ╔═════════════════════════╗
@@ -262,6 +289,7 @@ def shift_mode():
     ║  2.   Base / Exponent   ║  
     ║  3.   Factorial         ║   
     ║  4.   nCr               ║
+    ║  5.   Modulus           ║
     ║  0.   Back              ║
     ╚═════════════════════════╝""")
     choice = int(input("     Choice: "))
@@ -276,6 +304,8 @@ def shift_mode():
         factorial()
     elif choice == 4:
         ncr()
+    elif choice == 5:
+        modulus()
     elif choice == 0:
         main()
 
