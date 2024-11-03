@@ -282,16 +282,16 @@ def modulus_result():
 
 def shift_mode():
     print(f""" 
-    ╔═════════════════════════╗
-    ║       SHIFT MODE        ║
-    ╠═════════════════════════╣
-    ║  1.   Square root       ║
-    ║  2.   Exponent          ║  
-    ║  3.   Factorial         ║   
-    ║  4.   nCr               ║
-    ║  5.   Modulus           ║
-    ║  0.   Back              ║
-    ╚═════════════════════════╝""")
+    \x1b[1;36m╔═════════════════════════╗
+    \x1b[1;36m║       \x1b[1;33mSHIFT MODE        \x1b[1;36m║
+    \x1b[1;36m╠═════════════════════════╣
+    \x1b[1;36m║  \x1b[1;32m1.   Square root       \x1b[1;36m║
+    \x1b[1;36m║  \x1b[1;32m2.   Exponent          \x1b[1;36m║  
+    \x1b[1;36m║  \x1b[1;32m3.   Factorial         \x1b[1;36m║   
+    \x1b[1;36m║  \x1b[1;32m4.   nCr               \x1b[1;36m║
+    \x1b[1;36m║  \x1b[1;32m5.   Modulus           \x1b[1;36m║
+    \x1b[1;36m║  \x1b[1;31m0.   Back              \x1b[1;36m║
+    \x1b[1;36m╚═════════════════════════╝""")
     choice = int(input("     \x1b[1;32mChoice:\x1b[1;37m	 "))
     time.sleep(1)
     clear()
