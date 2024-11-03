@@ -32,7 +32,7 @@ def add_result():
     ║       Num2 = {num2:<10} ║
     ║       Total = {result:<10}║
     ╚═════════════════════════╝""")
-    choice = input("     Press Enter to Go Back:\x1b[1;37m ")
+    choice = input("     \x1b[1;31mPress Enter to Go Back:\x1b[1;37m ")
     time.sleep(1)
     main()
 
@@ -60,7 +60,7 @@ def sub_result():
     ║       Num2 = {num2:<10} ║
     ║       Total = {result:<10}║
     ╚═════════════════════════╝""")
-    choice = input("     Press Enter to Go Back:\x1b[1;37m ")
+    choice = input("     \x1b[1;31mPress Enter to Go Back:\x1b[1;37m ")
     time.sleep(1)
     main()
 
@@ -86,7 +86,7 @@ def mult_result():
     ║       Num2 = {num2:<10} ║
     ║       Total = {result:<10}║
     ╚═════════════════════════╝""")
-    choice = input("     Press Enter to Go Back:\x1b[1;37m ")
+    choice = input("     \x1b[1;31mPress Enter to Go Back:\x1b[1;37m ")
     time.sleep(1)
     main()       
 
@@ -112,7 +112,7 @@ def div_result():
     ║       Num2 = {num2:<10} ║
     ║       Total = {result:<10.5f}║
     ╚═════════════════════════╝""")
-    choice = input("     Press Enter to Go Back:\x1b[1;37m ")
+    choice = input("     \x1b[1;31mPress Enter to Go Back:\x1b[1;37m ")
     time.sleep(1)
     main()  
 
@@ -136,7 +136,7 @@ def qroot_result():
     ║       Num1 = {num1:<10} ║
     ║       Qroot = {result:<10.4f}║
     ╚═════════════════════════╝""")
-    choice = input("     Press Enter to Go Back:\x1b[1;37m ")
+    choice = input("     \x1b[1;31mPress Enter to Go Back:\x1b[1;37m ")
     time.sleep(1)
     clear()
     shift_mode()  
@@ -170,7 +170,7 @@ def asmd_result():
     ║       Mult = {result2:<10} ║
     ║       Div = {result3:<10}  ║
     ╚═════════════════════════╝""")
-    choice = input("     Press Enter to Go Back:\x1b[1;37m ")
+    choice = input("     \x1b[1;31mPress Enter to Go Back:\x1b[1;37m ")
     time.sleep(1)
     main()
 
@@ -196,7 +196,7 @@ def exponent_result():
     ║      Num2 = {num2:<10}  ║
     ║      Result = {result:<10.0f}║
     ╚═════════════════════════╝""")
-    choice = input("     Press Enter to Go Back:\x1b[1;37m ")
+    choice = input("     \x1b[1;31mPress Enter to Go Back:\x1b[1;37m ")
     time.sleep(1)
     clear()
     shift_mode()  
@@ -221,7 +221,7 @@ def factorial_result():
     ║      Num1 = {num1:<10}  ║
     ║      Result = {result:<10}║    
     ╚═════════════════════════╝""")
-    choice = input("     Press Enter to Go Back:\x1b[1;37m ")
+    choice = input("     \x1b[1;31mPress Enter to Go Back:\x1b[1;37m ")
     time.sleep(1)
     clear()
     shift_mode()
@@ -248,7 +248,7 @@ def ncr_result():
     ║      Num2 = {num2:<10}  ║
     ║      Result = {result:<10}║    
     ╚═════════════════════════╝""")
-    choice = input("     Press Enter to Go Back:\x1b[1;37m ")
+    choice = input("     \x1b[1;31mPress Enter to Go Back:\x1b[1;37m ")
     time.sleep(1)
     clear()
     shift_mode()
@@ -275,7 +275,7 @@ def modulus_result():
     ║      Num2 = {num2:<10}  ║
     ║      Result = {result:<10}║    
     ╚═════════════════════════╝""")
-    choice = input("     Press Enter to Go Back:\x1b[1;37m ")
+    choice = input("     \x1b[1;31mPress Enter to Go Back:\x1b[1;37m ")
     time.sleep(1)
     clear()
     shift_mode()
