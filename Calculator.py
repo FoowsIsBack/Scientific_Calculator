@@ -320,18 +320,18 @@ def shift_mode():
 def main():
     clear()
     print(f""" 
-    ╔═════════════════════════╗
-    ║  SCIENTIFIC CALCULATOR  ║
-    ╠═════════════════════════╣
-    ║  1.   Addition          ║
-    ║  2.   Subtraction       ║
-    ║  3.   Multiplication    ║
-    ║  4.   Division          ║
-    ║  5.   All in One        ║
-    ║  6.   Shift-Mode        ║    
-    ║  0.   Exit              ║
-    ╚═════════════════════════╝""")
-    choice = int(input("     Choice: "))
+    \x1b[1;36m	╔═════════════════════════╗
+    \x1b[1;36m	║  \x1b[1;33mSCIENTIFIC CALCULATOR  \x1b[1;36m║
+    \x1b[1;36m    ╠═════════════════════════╣
+    \x1b[1;36m	║  \x1b[1;32m1.   Addition          \x1b[1;36m║
+    \x1b[1;36m	║  \x1b[1;32m2.   Subtraction       \x1b[1;36m║
+    \x1b[1;36m	║  \x1b[1;32m3.   Multiplication    \x1b[1;36m║
+    \x1b[1;36m	║  \x1b[1;32m4.   Division          \x1b[1;36m║
+    \x1b[1;36m	║  \x1b[1;32m5.   All in One        \x1b[1;36m║
+    \x1b[1;36m	║  \x1b[1;32m6.   Shift-Mode        \x1b[1;36m║    
+    \x1b[1;36m	║  \x1b[1;31m0.   Exit              \x1b[1;36m║
+    \x1b[1;36m	╚═════════════════════════╝""")
+    choice = int(input("         Choice: "))
     time.sleep(1)
     clear()
 
