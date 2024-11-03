@@ -310,9 +310,9 @@ def shift_mode():
         main()
     else:
         print(f""" 
-        ╔═════════════════════════╗
-        ║      Invalid Input!     ║
-        ╚═════════════════════════╝""")
+        \x1b[1;36m╔═════════════════════════╗
+        \x1b[1;36m║      \x1b[1;32mInvalid Input!     \x1b[1;36m║
+        \x1b[1;36m╚═════════════════════════╝""")
         time.sleep(1.5)
         clear()
         shift_mode()
