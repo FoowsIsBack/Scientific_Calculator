@@ -16,8 +16,8 @@ def add():
     ╔═════════════════════════╗
     ║        ADDITION         ║
     ╚═════════════════════════╝""")
-    num1 = int(input("     Num1: "))
-    num2 = int(input("     Num2: "))
+    num1 = int(input("     \x1b[1;32mNum1: "))
+    num2 = int(input("     \x1b[1;32mNum2: "))
     result = num1 + num2
     time.sleep(1)
     clear()
@@ -43,8 +43,8 @@ def sub():
     ╔═════════════════════════╗
     ║        ADDITION         ║
     ╚═════════════════════════╝""")
-    num1 = int(input("     Num1: "))
-    num2 = int(input("     Num2: "))
+    num1 = int(input("     \x1b[1;32mNum1: "))
+    num2 = int(input("     \x1b[1;32mNum2: "))
     result = num1 - num2
     time.sleep(1)
     clear()
@@ -70,8 +70,8 @@ def mult():
     ╔═════════════════════════╗
     ║      MULTIPLICATION     ║
     ╚═════════════════════════╝""")
-    num1 = int(input("     Num1: "))
-    num2 = int(input("     Num2: "))
+    num1 = int(input("     \x1b[1;32mNum1: "))
+    num2 = int(input("     \x1b[1;32mNum2: "))
     result = num1 * num2
     time.sleep(1)
     clear()
@@ -96,8 +96,8 @@ def div():
     ╔═════════════════════════╗
     ║        DIVISION         ║
     ╚═════════════════════════╝""")
-    num1 = int(input("     Num1: "))
-    num2 = int(input("     Num2: "))
+    num1 = int(input("     \x1b[1;32mNum1: "))
+    num2 = int(input("     \x1b[1;32mNum2: "))
     result = num1 / num2
     time.sleep(1)
     clear()
@@ -122,7 +122,7 @@ def qroot():
     ╔═════════════════════════╗
     ║       SQUARE ROOT       ║
     ╚═════════════════════════╝""")
-    num1 = int(input("     Num1: "))
+    num1 = int(input("     \x1b[1;32mNum1: "))
     result = math.sqrt(num1)
     time.sleep(1)
     clear()
@@ -147,8 +147,8 @@ def asmd():
     ╔═════════════════════════╗
     ║  ALL IN ONE CALCULATOR  ║
     ╚═════════════════════════╝""")
-    num1 = int(input("     Num1: "))
-    num2 = int(input("     Num2: "))
+    num1 = int(input("     \x1b[1;32mNum1: "))
+    num2 = int(input("     \x1b[1;32mNum2: "))
     result = num1 + num2
     result1 = num1 - num2
     result2 = num1 * num2
@@ -180,8 +180,8 @@ def exponent():
     ╔═════════════════════════╗
     ║     RAISED TO POWER     ║
     ╚═════════════════════════╝""")
-    num1 = int(input("     Base: "))
-    num2 = int(input("     Exponent: "))
+    num1 = int(input("     \x1b[1;32mBase: "))
+    num2 = int(input("     \x1b[1;32mExponent: "))
     result = math.pow(num1, num2)
     time.sleep(1)
     clear()
@@ -207,7 +207,7 @@ def factorial():
     ╔═════════════════════════╗
     ║        FACTORIAL        ║
     ╚═════════════════════════╝""")
-    num1 = int(input("     Num1: "))
+    num1 = int(input("     \x1b[1;32mNum1: "))
     result = math.factorial(num1)
     time.sleep(1)
     clear()
@@ -232,8 +232,8 @@ def ncr():
     ╔═════════════════════════╗
     ║        nCr METHODS      ║
     ╚═════════════════════════╝""")
-    num1 = int(input("     Num1: "))
-    num2 = int(input("     Num2: "))
+    num1 = int(input("     \x1b[1;32mNum1: "))
+    num2 = int(input("     \x1b[1;32mNum2: "))
     result = math.comb(num1, num2)
     time.sleep(1)
     clear()
@@ -259,8 +259,8 @@ def modulus():
     ╔═════════════════════════╗
     ║         MODULUS         ║
     ╚═════════════════════════╝""")
-    num1 = int(input("     Num1: "))
-    num2 = int(input("     Num2: "))
+    num1 = int(input("     \x1b[1;32mNum1: "))
+    num2 = int(input("     \x1b[1;32mNum2: "))
     result = num1 % num2
     time.sleep(1)
     clear()
@@ -292,7 +292,7 @@ def shift_mode():
     ║  5.   Modulus           ║
     ║  0.   Back              ║
     ╚═════════════════════════╝""")
-    choice = int(input("     Choice:\x1b[1;37m	 "))
+    choice = int(input("     \x1b[1;32mChoice:\x1b[1;37m	 "))
     time.sleep(1)
     clear()
 
