@@ -292,7 +292,7 @@ def shift_mode():
     ║  5.   Modulus           ║
     ║  0.   Back              ║
     ╚═════════════════════════╝""")
-    choice = int(input("     Choice: "))
+    choice = int(input("     Choice:\x1b[1;37m	 "))
     time.sleep(1)
     clear()
 
@@ -331,7 +331,7 @@ def main():
     \x1b[1;36m	║  \x1b[1;32m6.   Shift-Mode        \x1b[1;36m║    
     \x1b[1;36m	║  \x1b[1;31m0.   Exit              \x1b[1;36m║
     \x1b[1;36m	╚═════════════════════════╝""")
-    choice = int(input("         Choice: "))
+    choice = int(input("         Choice:\x1b[1;37m	 "))
     time.sleep(1)
     clear()
 
@@ -350,15 +350,15 @@ def main():
     elif choice == 0:
         clear()
         print(f""" 
-        ╔═════════════════════════╗
-        ║      Bye bye bye...     ║
-        ╚═════════════════════════╝""")
+        \x1b[1;36m╔═════════════════════════╗
+        \x1b[1;36m║      \x1b[1;32mBye bye bye...     \x1b[1;36m║
+        \x1b[1;36m╚═════════════════════════╝""")
         time.sleep(1.5)
     else:
         print(f""" 
-        ╔═════════════════════════╗
-        ║      Invalid Input!     ║
-        ╚═════════════════════════╝""")
+        \x1b[1;36m╔═════════════════════════╗
+        \x1b[1;36m║      \x1b[1;32mInvalid Input!     \x1b[1;36m║
+        \x1b[1;36m╚═════════════════════════╝""")
         time.sleep(1.5)
         main()
 
