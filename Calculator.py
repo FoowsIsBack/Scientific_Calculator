@@ -331,7 +331,7 @@ def main():
     \x1b[1;36m	║  \x1b[1;32m6.   Shift-Mode        \x1b[1;36m║    
     \x1b[1;36m	║  \x1b[1;31m0.   Exit              \x1b[1;36m║
     \x1b[1;36m	╚═════════════════════════╝""")
-    choice = int(input("         \x1b[1;32m6Choice:\x1b[1;37m	 "))
+    choice = int(input("         \x1b[1;32mChoice:\x1b[1;37m "))
     time.sleep(1)
     clear()
 
