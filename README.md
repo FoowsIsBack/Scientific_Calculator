@@ -1,6 +1,5 @@
 # Calculator
-![image](https://github.com/user-attachments/assets/88d6a8b7-d826-4cac-95ce-aeb77ffb18e5)
-![image](https://github.com/user-attachments/assets/a5783943-8e1b-44e0-ad89-1144c0e01532)
+![image](https://github.com/user-attachments/assets/939b3f32-92e2-4225-aff9-6d0f916b556c)
 
 # Install
 ```sh
